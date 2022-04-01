@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "sit": "NODE_ENV=sit nodemon index.js",
-    "prod": "NODE_ENV=prod nodemon index.js"
+    "prod": "NODE_ENV=prod nodemon index.js",
+    "start": "NODE_ENV=prod nodemon index.js"
   },
   "author": "",
   "license": "ISC",
