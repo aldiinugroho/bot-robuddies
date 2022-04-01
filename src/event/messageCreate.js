@@ -1,6 +1,5 @@
 const validation = require('../validation/validationMessage')
-const command = require('../command/commandMessage')
-const disTubePlayer = require('./distube');
+const musicPlayer = require('./musicPlayer');
 const {
   isBot,
   isInside,
@@ -23,9 +22,7 @@ const eventMessageCreate = {
       } else {
         const voiceChannel = message.member?.voice?.channel
         const queue = distube.getQueue(message)
-        disTubePlayer.distube(message,distube,config,voiceChannel,queue)
-        // command.play(msg,distube)
-        // command.stop(msg,distube)
+        musicPlayer.musicPlayer(message,distube,config,voiceChannel,queue)
         validation.ping(message)
       }
     });
